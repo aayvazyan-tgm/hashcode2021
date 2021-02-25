@@ -11,7 +11,7 @@ class Output(
             stringBuilder.append("${ischedule.intersectionId}\n")
             stringBuilder.append("${ischedule.streets.size}\n")
             ischedule.streets.forEach { lightPhase ->
-                stringBuilder.append("${lightPhase.street.streetName} ${lightPhase.time}")
+                stringBuilder.append("${lightPhase.street.streetName} ${lightPhase.time}\n")
             }
         }
         return stringBuilder.toString()
