@@ -9,8 +9,8 @@ class Output(
         stringBuilder.append("${intersectionSchedules.size}\n")
         intersectionSchedules.forEach { ischedule ->
             stringBuilder.append("${ischedule.intersectionId}\n")
-            stringBuilder.append("${ischedule.streets.size}\n")
-            ischedule.streets.forEach { lightPhase ->
+            stringBuilder.append("${ischedule.lightPhases.size}\n")
+            ischedule.lightPhases.forEach { lightPhase ->
                 stringBuilder.append("${lightPhase.street.streetName} ${lightPhase.time}\n")
             }
         }
